@@ -1,6 +1,6 @@
 {
   "name": "@strdcoders/jackett-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An api for 'Jackett' server requests",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "tsc -sourcemap -p ./tsconfig.json",
-    "run": "node -r source-map-support/register dist/src/index.js",
+    "run": "node -r source-map-support/register dist/index.js",
     "start": "npm run build && npm run run",
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts --exit",
     "depcheck": "depcheck --ignores \"source-map-support,ts-node,@types/chai-http,prettier,pretty-quick,eslint-plugin-jsdoc\"",
@@ -28,7 +28,21 @@
     "radarr",
     "plex"
   ],
-  "author": "STRDcoders",
+  "contributors": [
+    {
+      "name": "STRDcoders",
+      "url": "https://github.com/STRDCoders"
+    },
+    {
+      "name": "tomerblecher",
+      "url": "https://github.com/tomerblecher"
+    },
+    {
+      "name": "AirplaneGobrr",
+      "email": "airplane@airplanegobrr.xyz",
+      "url": "https://airplanegobrr.xyz"
+    }
+  ],
   "license": "Apache-2.0",
   "dependencies": {
     "axios": "^0.27.2",
